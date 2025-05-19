@@ -91,7 +91,8 @@ main {
 /* Hero Section */
 .hero {
     position: relative;
-    background: url('C:/Users/user/Desktop/new port/IMG_0195.JPG') no-repeat center center/cover;
+    background: url('assets/images/IMG_0195.JPG') no-repeat center center/cover;
+    background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
