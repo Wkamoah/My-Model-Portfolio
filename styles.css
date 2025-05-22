@@ -751,3 +751,20 @@ a:hover {
         padding: 20px;
     }
 }
+
+/* --- NEW: Book Me Button Styles --- */
+.book-me-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0099cc;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background 0.2s;
+}
+
+.book-me-btn:hover {
+    background: #0077aa;
+}
