@@ -3,53 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Model Booking Form</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
+    <title>Book a Session with Winfred Kofi Amoah</title>
+    <link rel="stylesheet" href="../styles.css"> </head>
 <body>
-    <!-- Sidebar Navigation -->
-    <nav>
-        <div class="logo">Winfred Kofi Amoah</div>
-        <ul>
-            <li><a href="../index.html#home">Home</a></li>
-            <li><a href="../index.html#about">About Me</a></li>
-            <li><a href="../index.html#portfolio">Portfolio</a></li>
-            <li><a href="../index.html#testimonials">Testimonials</a></li>
-            <li><a href="../index.html#contact">Contact</a></li>
-            <li><a href="bookings.html" class="btn">Book a Session</a></li>
-        </ul>
-    </nav>
+    <div class="booking-container">
+        <h1>Book a Session</h1>
+        <p>Please fill out the form below to book a session or make an inquiry.</p>
 
-    <!-- Main Content -->
-    <main>
-        <header>
-            <h1>Book a Model</h1>
-        </header>
-        <section id="bookings">
-            <div class="booking-container">
-                <h1>Book a Session</h1>
-                <p>Please fill out the form below to book a session with Winfred Kofi Amoah.</p>
-                <form>
-                    <div class="input-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="date">Preferred Date</label>
-                        <input type="date" id="date" name="date" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Submit</button>
-                </form>
+        <form id="bookingForm" action="https://formspree.io/f/mjkwdgnn" method="POST">
+            <div class="input-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
             </div>
-        </section>
-    </main>
-</body>
+            <div class="input-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone Number (Optional):</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="input-group">
+                <label for="service">Service Interested In:</label>
+                <select id="service" name="service" required>
+                    <option value="">-- Please Select --</option>
+                    <option value="fashion_shoot">Fashion Shoot</option>
+                    <option value="commercial_work">Commercial Work</option>
+                    <option value="acting_role">Acting Role</option>
+                    <option value="collaboration">Collaboration</option>
+                    <option value="other">Other Inquiry</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="details">Project Details / Message:</label>
+                <textarea id="details" name="details" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Booking Request</button>
+        </form>
+    </div>
+
+    <script src="../script.js"></script> </body>
 </html>
